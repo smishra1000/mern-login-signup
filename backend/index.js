@@ -17,9 +17,13 @@ app.use(bodyParser.json())
 // routes loading from routes file
 const userRoutes = require("./routes/user")
 
+const courseRoutes = require("./routes/course")
+
 // routes
 app.use("/",userRoutes)
 app.use("/user",userRoutes)
+app.use("/course",courseRoutes)
+
 
 
 // server starting code
